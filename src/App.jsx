@@ -3,7 +3,7 @@ import { products } from "./data/products"
 import ProductCard from "./components/ProductCard"
 
 export default function App() {
-  const [brand, setBrand] = useState("Todas")
+  const [brand, setBrand] = useState("Todos")
   const [size, setSize] = useState("Todos")
   const [material, setMaterial] = useState("Todos")
 
@@ -62,7 +62,7 @@ export default function App() {
                 value={brand}
                 onChange={e => setBrand(e.target.value)}
               >
-                <option>Todos</option>
+                <option value="Todos">Todas</option>
                 <option>Nike</option>
                 <option>Adidas</option>
                 <option>Hugo Boss</option>
