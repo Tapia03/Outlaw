@@ -18,7 +18,6 @@ export default function App() {
   return (
     <div className="min-h-screen bg-black text-white overflow-x-hidden">
 
-      {/* HEADER */}
       <header className="border-b border-white/10">
         <div className="max-w-6xl mx-auto px-6 py-6 flex justify-between items-center">
           <h1 className="text-lg font-semibold tracking-[0.3em]">
@@ -35,7 +34,6 @@ export default function App() {
         </div>
       </header>
 
-      {/* HERO */}
       <section className="max-w-6xl mx-auto px-6 py-24 text-center">
         <h2 className="text-4xl md:text-6xl font-extrabold tracking-tight">
           Camisetas masculinas
@@ -46,7 +44,6 @@ export default function App() {
         </p>
       </section>
 
-      {/* FILTROS */}
       <section className="max-w-6xl mx-auto px-6 mb-24">
         <div className="flex justify-center">
           <div className="
@@ -55,7 +52,6 @@ export default function App() {
             items-center
           ">
 
-            {/* MARCA */}
             <div className="flex flex-col items-center gap-2 w-full sm:w-auto">
               <span className="text-xs uppercase tracking-[0.35em] text-white/60">
                 Marca
@@ -87,7 +83,6 @@ export default function App() {
               </select>
             </div>
 
-            {/* TAMANHO */}
             <div className="flex flex-col items-center gap-2 w-full sm:w-auto">
               <span className="text-xs uppercase tracking-[0.35em] text-white/60">
                 Tamanho
@@ -114,7 +109,6 @@ export default function App() {
               </select>
             </div>
 
-            {/* TIPO */}
             <div className="flex flex-col items-center gap-2 w-full sm:w-auto">
               <span className="text-xs uppercase tracking-[0.35em] text-white/60">
                 Tipo
@@ -139,7 +133,6 @@ export default function App() {
               </select>
             </div>
 
-            {/* LIMPAR */}
             <div className="flex flex-col items-center gap-2 w-full sm:w-auto">
               <span className="opacity-0 text-xs select-none">
                 Limpar
@@ -167,7 +160,6 @@ export default function App() {
         </div>
       </section>
 
-      {/* CATÁLOGO */}
       <section className="max-w-6xl mx-auto px-6 pb-32">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
           {filteredProducts.map(product => (
