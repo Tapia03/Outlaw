@@ -25,7 +25,7 @@ export const products = [
   },
   {
     id: 3,
-    name: "Camiseta Tommy Hilfiger - Preta",
+    name: "Camiseta Tommy - Preta",
     brand: "Tommy Hilfiger",
     size: "M",
     material: "Premium",
@@ -61,7 +61,7 @@ export const products = [
   },
   {
     id: 6,
-    name: "Camiseta Tommy Hilfiger - Preta",
+    name: "Camiseta Tommy - Preta",
     brand: "Tommy Hilfiger",
     size: "GG",
     material: "Premium",
