@@ -30,7 +30,7 @@ export default function App() {
             target="_blank"
             className="text-xs uppercase tracking-[0.25em] border border-white/20 px-5 py-2 hover:bg-white hover:text-black transition"
           >
-            WhatsApp
+            Contato
           </a>
         </div>
       </header>
