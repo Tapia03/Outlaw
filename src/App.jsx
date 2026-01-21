@@ -106,7 +106,7 @@ export default function App() {
                 value={size}
                 onChange={e => setSize(e.target.value)}
               >
-                <option value="Todos">Todas</option>
+                <option value="Todos">Todos</option>
                 <option>P</option>
                 <option>M</option>
                 <option>G</option>
@@ -133,7 +133,7 @@ export default function App() {
                 value={material}
                 onChange={e => setMaterial(e.target.value)}
               >
-                <option value="Todos">Todas</option>
+                <option value="Todos">Todos</option>
                 <option>Premium</option>
                 <option>Tradicional</option>
               </select>
