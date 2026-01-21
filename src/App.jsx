@@ -3,7 +3,7 @@ import { products } from "./data/products"
 import ProductCard from "./components/ProductCard"
 
 export default function App() {
-  const [brand, setBrand] = useState("Todos")
+  const [brand, setBrand] = useState("Todas")
   const [size, setSize] = useState("Todos")
   const [material, setMaterial] = useState("Todos")
 
