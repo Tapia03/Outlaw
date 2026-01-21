@@ -16,49 +16,49 @@ export default function App() {
   })
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-black text-white overflow-x-hidden">
 
       {/* HEADER */}
       <header className="border-b border-white/10">
-        <div className="max-w-6xl mx-auto px-6 py-6 flex justify-between items-center">
-          <h1 className="text-lg font-semibold tracking-[0.3em]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-6 flex justify-between items-center">
+          <h1 className="text-lg font-semibold tracking-[0.2em] sm:tracking-[0.3em]">
             OUTLAW
           </h1>
 
           <a
             href="https://wa.me/5553999616338"
             target="_blank"
-            className="text-xs uppercase tracking-[0.25em] border border-white/20 px-5 py-2 hover:bg-white hover:text-black transition"
+            className="text-[10px] sm:text-xs uppercase tracking-[0.25em] border border-white/20 px-4 sm:px-5 py-2 hover:bg-white hover:text-black transition"
           >
-            Contato
+            WhatsApp
           </a>
         </div>
       </header>
 
       {/* HERO */}
-      <section className="max-w-6xl mx-auto px-6 py-24 text-center">
-        <h2 className="text-5xl md:text-6xl font-extrabold tracking-tight">
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 py-20 sm:py-24 text-center">
+        <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight">
           Camisetas masculinas
         </h2>
 
-        <p className="mt-8 text-white/60 max-w-xl mx-auto text-lg">
+        <p className="mt-6 sm:mt-8 text-white/60 max-w-xl mx-auto text-base sm:text-lg">
           Minimalismo. Qualidade. Atitude.
         </p>
       </section>
 
       {/* FILTROS */}
-      <section className="max-w-6xl mx-auto px-6 mb-20">
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 mb-16">
         <div className="flex justify-center">
-          <div className="flex gap-10 items-end">
+          <div className="flex flex-wrap justify-center gap-6 items-end">
 
             {/* MARCA */}
-            <div className="flex flex-col items-center gap-2">
-              <span className="text-xs uppercase tracking-[0.35em] text-white/50">
+            <div className="flex flex-col items-center gap-1">
+              <span className="text-[10px] uppercase tracking-[0.35em] text-white/50">
                 Marca
               </span>
 
               <select
-                className="bg-black border border-white/20 px-3 py-2 text-sm tracking-wider focus:outline-none w-[170px] text-center"
+                className="bg-black border border-white/20 px-2 py-1 text-[11px] tracking-wider focus:outline-none w-[110px] sm:w-[135px] text-center"
                 value={brand}
                 onChange={e => setBrand(e.target.value)}
               >
@@ -76,13 +76,13 @@ export default function App() {
             </div>
 
             {/* TAMANHO */}
-            <div className="flex flex-col items-center gap-2">
-              <span className="text-xs uppercase tracking-[0.35em] text-white/50">
+            <div className="flex flex-col items-center gap-1">
+              <span className="text-[10px] uppercase tracking-[0.35em] text-white/50">
                 Tamanho
               </span>
 
               <select
-                className="bg-black border border-white/20 px-3 py-2 text-sm tracking-wider focus:outline-none w-[90px] text-center"
+                className="bg-black border border-white/20 px-2 py-1 text-[11px] tracking-wider focus:outline-none w-[80px] sm:w-[90px] text-center"
                 value={size}
                 onChange={e => setSize(e.target.value)}
               >
@@ -95,13 +95,13 @@ export default function App() {
             </div>
 
             {/* TIPO */}
-            <div className="flex flex-col items-center gap-2">
-              <span className="text-xs uppercase tracking-[0.35em] text-white/50">
+            <div className="flex flex-col items-center gap-1">
+              <span className="text-[10px] uppercase tracking-[0.35em] text-white/50">
                 Tipo
               </span>
 
               <select
-                className="bg-black border border-white/20 px-3 py-2 text-sm tracking-wider focus:outline-none w-[130px] text-center"
+                className="bg-black border border-white/20 px-2 py-1 text-[11px] tracking-wider focus:outline-none w-[95px] sm:w-[110px] text-center"
                 value={material}
                 onChange={e => setMaterial(e.target.value)}
               >
@@ -116,15 +116,15 @@ export default function App() {
       </section>
 
       {/* CATÁLOGO */}
-      <section className="max-w-6xl mx-auto px-6 pb-32">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 pb-28 sm:pb-32">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-10">
           {filteredProducts.map(product => (
             <ProductCard key={product.id} product={product} />
           ))}
         </div>
 
         {filteredProducts.length === 0 && (
-          <p className="text-center text-white/50 mt-20">
+          <p className="text-center text-white/50 mt-16 sm:mt-20">
             Nenhum produto encontrado.
           </p>
         )}
