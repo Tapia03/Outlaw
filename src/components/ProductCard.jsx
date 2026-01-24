@@ -1,43 +1,34 @@
-export default function ProductCard({ product }) {
-  const whatsappMessage = encodeURIComponent(
-    `Olá! Tenho interesse na ${product.name}\n` +
-    `Tamanho: ${product.size}\n` +
-    `Material: Algodão ${product.material}\n` +
-    `Preço: ${product.price}`
-  )
+import { useState } from "react"
 
+export default function ProductCard({ product }) {
+  const [showModel, setShowModel] = useState(false)
+
+  const whatsappMessage = encodeURIComponent(
+    `Olá! Tenho interesse na ${product.name}\nTamanho: ${product.size}\nMaterial: Algodão ${product.material}\nPreço: ${product.price}`
+  )
   const whatsappLink = `https://wa.me/5553999616338?text=${whatsappMessage}`
 
   return (
-    <div className="group border border-white/10 overflow-hidden">
+    <div className="border border-white/10 overflow-hidden">
       {/* Imagens */}
-      <div className="relative h-[420px]">
+      <div
+        className="relative h-[420px]"
+        onClick={() => setShowModel(!showModel)} // alterna imagem ao tocar
+      >
         <img
-          src={product.images.product}
-          alt={product.name}
-          className="absolute inset-0 h-full w-full object-cover transition-opacity duration-500 group-hover:opacity-0"
-        />
-
-        <img
-          src={product.images.model}
-          alt={product.name}
-          className="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+          src={showModel ? product.images.model : product.images.product}
+          alt={`${product.brand} - ${product.name}`}
+          className="absolute inset-0 h-full w-full object-cover transition-opacity duration-500"
         />
       </div>
 
       {/* Conteúdo */}
       <div className="p-6 text-center">
-        <h4 className="text-sm uppercase tracking-widest">
-          {product.name}
-        </h4>
-
+        <h4 className="text-sm uppercase tracking-widest">{product.name}</h4>
         <p className="text-xs text-white/50 mt-2">
           Algodão {product.material} · Tamanho {product.size}
         </p>
-
-        <p className="mt-4 text-lg font-semibold">
-          {product.price}
-        </p>
+        <p className="mt-4 text-lg font-semibold">{product.price}</p>
 
         <a
           href={whatsappLink}
