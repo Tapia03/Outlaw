@@ -1,16 +1,5 @@
 export const products = [
-  {
-    id: 1,
-    name: "Camiseta Hugo Boss - Branca",
-    brand: "Hugo Boss",
-    size: "P",
-    material: "Premium",
-    price: "R$ 54,99",
-    images: {
-      product: "https://res.cloudinary.com/dgqnky6m3/image/upload/v1768955409/Camiseta_2_-_Tam_P_-_Hugo_Boss_gzem14.jpg",
-      model: "https://res.cloudinary.com/dgqnky6m3/image/upload/v1768955527/Camiseta_2_-_Tam_P_ly57xe.jpg",
-    },
-  },
+
   {
     id: 2,
     name: "Camiseta Nike - Vermelha",
@@ -106,18 +95,6 @@ export const products = [
     images: {
       product: "https://res.cloudinary.com/dgqnky6m3/image/upload/v1768955409/Camiseta_1_-_Tam_M_l4y2wj.jpg",
       model: "https://res.cloudinary.com/dgqnky6m3/image/upload/v1768955491/Camiseta_1_-_Tam_M_l2qt2i.jpg",
-    },
-  },
-  {
-    id: 10,
-    name: "Camiseta Adidas - Bege",
-    brand: "Adidas",
-    size: "M",
-    material: "Tradicional",
-    price: "R$ 49,99",
-    images: {
-      product: "https://res.cloudinary.com/dgqnky6m3/image/upload/v1768955407/Camiseta_1_-_Tam_M_3_bn1log.jpg",
-      model: "https://res.cloudinary.com/dgqnky6m3/image/upload/v1768955471/Camiseta_1_-_Tam_M_3_iofsyk.jpg",
     },
   },
   {
