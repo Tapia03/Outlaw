@@ -36,7 +36,7 @@ export default function ProductCard({ product }) {
         <button
           onClick={() => addToCart(product)}
           className="mt-6 w-full border border-white py-3 text-xs uppercase tracking-[0.3em] hover:bg-white hover:text-black transition"
-        >
+         >
           Adicionar ao carrinho
         </button>
       </div>

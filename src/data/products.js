@@ -1,17 +1,6 @@
 export const products = [
 
-  {
-    id: 2,
-    name: "Camiseta Nike - Vermelha",
-    brand: "Nike",
-    size: "M",
-    material: "Premium",
-    price: "R$ 54,99",
-    images: {
-      product: "https://res.cloudinary.com/dgqnky6m3/image/upload/v1768955806/Camiseta_2_-_Tam_M_dmnrxh.jpg",
-      model: "https://res.cloudinary.com/dgqnky6m3/image/upload/v1768955526/Camiseta_2_-_Tam_M_pchvtd.jpg",
-    },
-  },
+ 
   {
     id: 3,
     name: "Camiseta Tommy - Preta",
