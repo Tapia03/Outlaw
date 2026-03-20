@@ -98,18 +98,6 @@ export const products = [
     },
   },
   {
-    id: 11,
-    name: "Camiseta Adidas - Azul Escuro",
-    brand: "Adidas",
-    size: "M",
-    material: "Tradicional",
-    price: "R$ 49,99",
-    images: {
-      product: "https://res.cloudinary.com/dgqnky6m3/image/upload/v1768955407/Camiseta_1_-_Tam_M_2_hyk7r3.jpg",
-      model: "https://res.cloudinary.com/dgqnky6m3/image/upload/v1768955471/Camiseta_1_-_Tam_M_2_qjaonu.jpg",
-    },
-  },
-  {
     id: 12,
     name: "Camiseta Adidas - Preta",
     brand: "Adidas",
