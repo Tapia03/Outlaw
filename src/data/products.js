@@ -13,18 +13,6 @@ export const products = [
     },
   },
   {
-    id: 3,
-    name: "Camiseta Tommy - Preta",
-    brand: "Tommy Hilfiger",
-    size: "M",
-    material: "Premium",
-    price: "R$ 54,99",
-    images: {
-      product: "https://res.cloudinary.com/dgqnky6m3/image/upload/v1768959251/Camiseta_2_-_Tam_M_-_Tomy_ixaomc.jpg",
-      model: "https://res.cloudinary.com/dgqnky6m3/image/upload/v1768959358/Camiseta_2_-_Tam_M_-_Tomy_dykw9w.jpg",
-    },
-  },
-  {
     id: 4,
     name: "Camiseta Lacoste - Branca",
     brand: "Lacoste",
@@ -83,18 +71,6 @@ export const products = [
     images: {
       product: "https://res.cloudinary.com/dgqnky6m3/image/upload/v1768955408/Camiseta_1_-_Tam_P_1_ydehwd.jpg",
       model: "https://res.cloudinary.com/dgqnky6m3/image/upload/v1768955491/Camiseta_1_-_Tam_P_1_uwqmjv.jpg",
-    },
-  },
-  {
-    id: 9,
-    name: "Camiseta Adidas - Branca",
-    brand: "Adidas",
-    size: "M",
-    material: "Tradicional",
-    price: "R$ 49,99",
-    images: {
-      product: "https://res.cloudinary.com/dgqnky6m3/image/upload/v1768955409/Camiseta_1_-_Tam_M_l4y2wj.jpg",
-      model: "https://res.cloudinary.com/dgqnky6m3/image/upload/v1768955491/Camiseta_1_-_Tam_M_l2qt2i.jpg",
     },
   },
   {
